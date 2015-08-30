@@ -144,5 +144,14 @@
 }
 .logo-lg > img {
   height: inherit;
-  padding:4px;
+  padding:3px;
+}
+.box-body {
+  width: inherit;
+}
+.box-title {
+  color: #338888
+}
+.poster {
+  width: 100%;
 }
