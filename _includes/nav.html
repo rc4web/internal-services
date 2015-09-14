@@ -1,0 +1,77 @@
+<!-- <nav class="nav-primary">
+    <ul>
+    	
+    	<li>
+    		<a href="{{ site.baseurl }}/">
+    	    Home
+    	    </a>
+    	</li>
+        {% for p in site.pages %}
+        	{% if p.home %}
+        	{% else %}
+        <li>
+        	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">
+            <div class="img-wrapper">
+        		<img src="{{ p.image }}" />
+        	</div>
+            {{ p.title }}
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    
+</nav> -->
+<!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="img/avatar5.png" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p>Hello, Guest!</p>
+              <!-- Status -->
+              <a href="#"><i class="fa fa-circle text-success"></i> Active</a>
+            </div>
+          </div>
+
+          <!-- search form (Optional) -->
+          <!-- <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search..."/>
+              <span class="input-group-btn">
+                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form> -->
+          <!-- /.search form -->
+
+          <!-- Sidebar Menu -->
+          <ul class="sidebar-menu">
+            <li class="header">Student Serivces</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="#"><i class='fa fa-bullhorn'></i> <span>Announcements</span></a></li>
+            <li><a href="#"><i class='fa fa-sitemap'></i> <span>Our CSC</span></a></li>
+            <li><a href="#"><i class='fa fa-calendar'></i> <span>Theme Rooms</span></a></li>
+            <li><a href="#"><i class='fa fa-coffee'></i> <span>Interest Groups</span></a></li>
+            <li><a href="#"><i class='fa fa-bus'></i> <span>Bus Arrivals</span></a></li>
+            <li><a href="#"><i class='fa fa-cutlery'></i> <span>Meal Credits</span></a></li>
+            <li><a href="#"><i class='fa fa-plug'></i> <span>Aircon Credits</span><i class="fa fa-external-link pull-right"></i></a></li>
+            <li><a href="#"><i class='fa fa-comment'></i> <span>Feedback</span></a></li>
+            <li class="treeview">
+              <a href="#"><i class='fa fa-edit'></i> <span>Forms</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#">ShortURL</a></li>
+                <li><a href="#">Poster Display</a></li>
+                <li><a href="#">Message Display</a></li>
+              </ul>
+            </li>
+          </ul><!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+      </aside>
