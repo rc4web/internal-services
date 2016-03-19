@@ -1,29 +1,30 @@
 <!-- Left side column. contains the logo and sidebar -->
       <aside class="main-sidebar">
 
-        <!-- sidebar: style can be found in sidebar.less -->
+        <!-- sidebar-->
         <section class="sidebar">
 
           <!-- Sidebar Menu -->
           <ul class="sidebar-menu">
             <li class="header">RC4 Student Serivces</li>
             <!-- Optionally, you can add icons to the links -->
-            <li {% if page.url == "/" %}class="active"{% endif %}><a href="/"><i class='fa fa-home'></i> <span>myRC4 Home</span></a></li>
-            <li {% if page.url == "/csc" %}class="active"{% endif %}><a href="#"><i class='fa fa-sitemap'></i> <span>Our CSC</span></a></li>
-            <li><a href="#"><i class='fa fa-calendar'></i> <span>Event Calendar</span></a></li>
-            <li><a href="#"><i class='fa fa-gamepad'></i> <span>Theme Rooms</span></a></li>
-            <li><a href="#"><i class='fa fa-group'></i> <span>Interest Groups</span></a></li>
-            <li><a href="#"><i class='fa fa-cutlery'></i> <span>Dining Menu</span></a></li>
+            <li {% if page.url == "/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/"><i class='fa fa-home'></i> <span>myRC4 Home</span></a></li>
+            <li {% if page.url == "/csc/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/csc/"><i class='fa fa-sitemap'></i> <span>Our CSC</span></a></li>
+            <li {% if page.url == "/calendar/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/calendar/"><i class='fa fa-calendar'></i> <span>College Calendar</span></a></li>
+            <li {% if page.url == "/bookings/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/bookings/"><i class='fa fa-gamepad'></i> <span>Theme Rooms</span></a></li>
+            <li {% if page.url == "/interest/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/interest/"><i class='fa fa-group'></i> <span>Interest Groups</span></a></li>
+            <li {% if page.url == "/menu/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/menu/"><i class='fa fa-cutlery'></i> <span>Dining Menu</span></a></li>
             <li><a href="http://link.rc4.sg/diningcredits" taget="_blank"><i class='fa fa-money'></i> <span>Meal Credits</span><i class="fa fa-external-link pull-right"></i></a></li>
             <li><a href="https://nus-utown.evs.com.sg/EVSWebPOS/web/index.jsp" target="_blank"><i class='fa fa-plug'></i> <span>Aircon Credits</span><i class="fa fa-external-link pull-right"></i></a></li>
-            <li><a href="#"><i class='fa fa-comment'></i> <span>Feedback</span></a></li>
+            <li {% if page.url == "/feedback/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/feedback/"><i class='fa fa-comment'></i> <span>Feedback</span></a></li>
             <li class="treeview">
               <a href="#"><i class='fa fa-edit'></i> <span>Other Forms</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="#">ShortURL</a></li>
-                <li><a href="#">Poster Display</a></li>
+                <li><a href="{{ site.baseurl }}/link/">ShortURL</a></li>
+                <li><a href="{{ site.baseurl }}/poster/">Poster Display</a></li>
               </ul>
             </li>
+            <li {% if page.url == "/supper/" %} class="active" {% endif %}><a href="{{ site.baseurl }}/supper/"><i class='fa fa-truck'></i> <span>Supper Delivery</span></a></li>
           </ul><!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->
