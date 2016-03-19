@@ -9,10 +9,15 @@
     <link href="{{ site.baseurl }}/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="{{ site.baseurl }}/css/fullcalendar.min.css" rel="stylesheet" type="text/css" />
     <!-- Design CSS -->
     <link href="{{ site.baseurl }}/css/AdminLTE.css" rel="stylesheet" type="text/css" />
     <link href="{{ site.baseurl }}/css/skin-rc4.css" rel="stylesheet" type="text/css" />
+    {% if page.url == "/" %}
+      <link href="{{ site.baseurl }}/css/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    {% endif %}
+    {% if page.url == "/calendar/" %}
+      <link href="{{ site.baseurl }}/css/fullcalendar_month.css" rel="stylesheet" type="text/css" />
+    {% endif %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
