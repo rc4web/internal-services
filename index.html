@@ -4,84 +4,98 @@ title: Student Life Home
 ---
 
 <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-          <h1>
-            <i class='fa fa-bullhorn'></i> Announcements
-            <small>We need to think of a name for the internal site.</small>
-          </h1>
-        </section>
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      <i class='fa fa-home'></i> myRC4 Home
+      <small>Your one-stop portal for RC4</small>
+    </h1>
+  </section>
+  
+  <!-- Main content -->
+  <section class="content">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-aqua"><i class="fa fa-money"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-number">Meal Credits</span>
+            <span class="info-box-text">Meal credits</span>
+          </div><!-- /.info-box-content -->
+        </div><!-- /.info-box -->
+      </div><!-- /.col -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-red"><i class="fa fa-cutlery"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-number">Dining Menu</span>
+            <span class="info-box-text">Dining Menu</span>
+          </div><!-- /.info-box-content -->
+        </div><!-- /.info-box -->
+      </div><!-- /.col -->
 
-        <!-- Main content -->
-        <section class="content">
-        <div class="row">
-            <!-- Left col -->
-            <section class="col-lg-7 connectedSortable ui-sortable">
-              <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Welcome to the #RC4U!</h3>
-              <div class="box-tools pull-right">
-                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
-              </div>
+      <!-- fix for small devices only -->
+      <div class="clearfix visible-sm-block"></div>
+
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-green"><i class="fa fa-gamepad"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-number">Theme Rooms</span>
+            <span class="info-box-text">Theme Rooms</span>
+          </div><!-- /.info-box-content -->
+        </div><!-- /.info-box -->
+      </div><!-- /.col -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-yellow"><i class="fa fa-globe"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-text">Short URL</span>
+            <span class="info-box-number">Short URL</span>
+          </div><!-- /.info-box-content -->
+        </div><!-- /.info-box -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+
+    <div class="row">
+      <section class="col-lg-7 connectedSortable ui-sortable">
+
+        <div class="box">
+          <div class="box-header with-border">
+            <h3 class="box-title">Events Posters</h3>
+            <div class="box-tools pull-right">
+              <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
             </div>
-            <div class="box-body">
-              <img class="poster" src="http://i.imgur.com/N2hrMeh.jpg"/>
-            </div><!-- /.box-body -->
-            <div class="box-footer">
-              <i class="fa fa-clock-o"></i> 28 Jun 2015 By Rey Neo
-            </div><!-- /.box-footer-->
           </div>
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Text Announcements</h3>
-              <div class="box-tools pull-right">
-                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
-              </div>
+          <div class="box-body">
+            <img class="poster" src="http://i.imgur.com/N2hrMeh.jpg"/>
+          </div><!-- /.box-body -->
+          <div class="box-footer">
+            <i class="fa fa-clock-o"></i> Display your poster here!
+          </div><!-- /.box-footer-->
+        </div>
+
+      </section><!-- right col -->
+      <section class="col-lg-5 connectedSortable ui-sortable">
+        <div class="box">
+          <div class="box-header with-border">
+            <h3 class="box-title">Event Calendar</h3>
+            <div class="box-tools pull-right">
+              <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
             </div>
-            <div class="box-body">
-              Amazing announcement from the awesome college about some random events happening on random dates!
-            </div><!-- /.box-body -->
-            <div class="box-footer">
-              <i class="fa fa-clock-o"></i> 28 Aug 2015 By Gerald Ng
-            </div><!-- /.box-footer-->
           </div>
+          <div class="box-body">
+            <div id="loading" style="display: none;">Loading...</div>
 
-            </section><!-- /.Left col -->
-            <section class="col-lg-5 connectedSortable ui-sortable">
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Formal Dinner</h3>
-              <div class="box-tools pull-right">
-                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
-              </div>
+            <div id="calendar" class="fc fc-ltr fc-unthemed">
             </div>
-            <div class="box-body">
-              RC4 (UTCP) Formal Welcome Dinner - Mon, 24 Aug at RC4 Dinning Hall
-            </div><!-- /.box-body -->
-            <div class="box-footer">
-              <i class="fa fa-clock-o"></i> 20 Aug 2015 By Gerald Ng
-            </div><!-- /.box-footer-->
-          </div>
+          </div><!-- /.box-body -->
+        </div>
+      </section>
+    </div>
+    <!-- Your Page Content Here -->
 
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Teal Thursdays - Paint NUS Teal!</h3>
-              <div class="box-tools pull-right">
-                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <img class="poster" src="http://i.imgur.com/Fodp2S7.jpg"/>
-            </div><!-- /.box-body -->
-            <div class="box-footer">
-              <i class="fa fa-clock-o"></i> 19 Aug 2015 By Roe Curie
-            </div><!-- /.box-footer-->
-          </div>
-
-            </section><!-- right col -->
-          </div>
-          <!-- Your Page Content Here -->
-
-        </section><!-- /.content -->
-      </div><!-- /.content-wrapper -->
+  </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
