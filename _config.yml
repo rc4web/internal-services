@@ -1,3 +1,4 @@
 name: RC4 Internal Services
 markdown: redcarpet
 rouge: true
+include: [_resources]
