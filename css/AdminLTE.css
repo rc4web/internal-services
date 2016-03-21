@@ -2056,6 +2056,12 @@ a:focus {
   margin: 0;
 }
 /*
+* IG Page
+*/
+.igDetailsImage {
+  width: 100%;
+}
+/*
  * Component: Timeline
  * -------------------
  */
