@@ -918,6 +918,9 @@ be a descendant of the grid when it is being dragged.
 			/* - LAYOUT ----- */
 				padding-right: 2px;
 				margin: 0px 0px 1px 110px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 			/* - FONT ------- */
 				font-size: 9px;
 				line-height: 12px;
