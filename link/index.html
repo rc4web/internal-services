@@ -17,9 +17,71 @@ title: Short URL
   <!-- Main content -->
   <section class="content">
     <div class="row">
+      <div class="col-md-12">
+        <div class="box">
+          <div class="box-header with-border">
+            <h3 class="box-title">Short URL Request Form</h3>
+          </div>
+          <form role="form" action="javascript:submit()">
+            <div class="box-body" id="success-body" style="display:none">
+              <div class="col-md-12">
+                <h3><i class="fa fa-check-circle"></i> Your url <b id="doneURL">?missing?</b> has been sent for approval and will be available within 1 working day. For urgent requests, please contact Rey via WA/Telegram.</h3>
+              </div>
+            </div>
+            <div class="box-body" id="form-body">
+              <div class="col-md-6">
+                <!-- ShortURL Field -->
+                <div class="form-group">
+                  <label for="shorturl">Preferred Short URL name</label>
+                  <div class="input-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default">http://link.rc4.sg/</button>
+                    </div>
+                    <input type="text" class="form-control" id="shorturl" placeholder="" required>
+                  </div>
+                </div>
 
+                <!-- Actual URL -->
+                <div class="form-group">
+                  <label for="actualurl">Actual URL</label>
+                  <input type="url" class="form-control" id="actualurl" placeholder="http://www.yourpage.com" required>
+                  <p class="help-block">The full address of your form/webpage (including the http) Eg. http://www.google.com</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <!-- Name -->
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  <p class="help-block">Please provide your @u.nus.edu or @nus.edu.sg email.</p>
+                </div>
+              </div>
+
+              <!-- RC4 Checkbox -->
+              <div class="col-md-12">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" required> I am an RC4 student and the link.rc4.sg short URL I am requesting is for purposes relating to the college or its students.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+
+            <div class="box-footer">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div><!-- /.row -->
-    <!-- Your Page Content Here -->
 
   </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
