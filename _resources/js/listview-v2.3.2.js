@@ -35,14 +35,14 @@
                 end: end
             };
         },
-                
+
                 initialize: function() {
             // called once when the view is instantiated, when the user switches to the view.
             // initialize member variables or do other setup tasks.
 
             View.prototype.initialize.apply(this, arguments);
         },
-                
+
                 render: function() {
 
             // responsible for displaying the skeleton of the view within the already-defined
@@ -115,7 +115,7 @@
 
                         noDebug || console.log("+++ We added the above event");
 
-                        if (!didAddDayHeader) {                                         
+                        if (!didAddDayHeader) {
                                                         tbody.append("<li class='fc-agendaList-dayHeader ui-widget-header'>" +
                             "<span class='fc-agendaList-day'>"+ currentDayStart.format('dddd') +"</span>" +
                             " <span class='fc-agendaList-date'>"+ currentDayStart.format("Do MMMM YYYY") +"</span>" +
@@ -138,9 +138,9 @@
                                                 "<span class='fc-event-end-time'>"+ e.end.format('(h:mm)t')) +"</span>"+
                                             "</div>"+
                                               "<span class='fc-eventlist-title'>"+e.title+"</span><br />"+
-                                              "<div class='fc-eventlist-desc'>"+e.description+"</div>"+
-                                          "</div>"+                                        
-                                        "</li>");   
+                                              "<div class='fc-eventlist-desc'>"+((e.description) ? e.description : "RC4 Event")+"</div>"+
+                                          "</div>"+
+                                        "</li>");
                         tbody.append(segEl);
 
                         //Tried to use fullcalendar code for this stuff but to no avail
@@ -180,6 +180,6 @@
     });
 
     FC.views.list = ListView; // register our class with the view system
-        
-        
+
+
 })();
