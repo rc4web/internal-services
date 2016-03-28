@@ -17,9 +17,76 @@ title: Poster Display
   <!-- Main content -->
   <section class="content">
     <div class="row">
+      <div class="col-md-12">
+        <div class="box">
+          <div class="box-header with-border">
+            <h3 class="box-title">Poster Display Request Form</h3>
+          </div>
+          <form role="form" action="javascript:submit()">
+            <div class="box-body" id="success-body" style="display:none">
+              <div class="col-md-12">
+                <h3><i class="fa fa-check-circle"></i> Your url <b id="doneURL">?missing?</b> has been sent for approval and will be available within 1 working day. For urgent requests, please contact Rey via WA/Telegram.</h3>
+              </div>
+            </div>
+            <div class="box-body" id="form-body">
 
+              <div class="col-md-6">
+                <!-- Name -->
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  <p class="help-block">Please provide your @u.nus.edu or @nus.edu.sg email.</p>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                  <label for="phone">Contact Number (Optional)</label>
+                  <input type="number" class="form-control" id="phone" placeholder="Enter phone number">
+                  <p class="help-block">Just in case we need to contact you</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <!-- ShortURL Field -->
+                <div class="form-group">
+                  <label for="title">Poster Title</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter Poster Title" required>
+                </div>
+
+                <!-- Actual URL -->
+                <div class="form-group">
+                  <label for="posterFile">Upload Poster Image File</label>
+                  <input type="file" id="posterFile">
+
+                  <p class="help-block">Your poster should be in A4 landscape. You should NOT have any critical information in the bottom 15% of your poster.</p>
+                </div>
+              </div>
+
+
+              <!-- RC4 Checkbox -->
+              <div class="col-md-12">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" required> I am an RC4 student and I understand that all poster display requests are subject to approval.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+
+            <div class="box-footer">
+              <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div><!-- /.row -->
-    <!-- Your Page Content Here -->
 
   </section><!-- /.content -->
 </div><!-- /.content-wrapper -->

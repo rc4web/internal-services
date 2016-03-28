@@ -2,6 +2,10 @@
  * Skin: RC4
  * ----------
  */
+ 
+ .td-food { text-transform: lowercase; }
+ .td-food:first-letter {text-transform: capitalize;}
+
 .skin-rc4 .main-header .navbar {
   background-color: #33aaaa;
 }
