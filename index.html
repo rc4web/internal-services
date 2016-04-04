@@ -22,16 +22,16 @@ title: Student Life Home
           <span class="info-box-icon bg-aqua"><i class="fa fa-money"></i></span>
           <div class="info-box-content">
             <span class="info-box-title">Meal Credits</span>
-            <span class="info-box-text">Check your dining hall credit balance</span>
+            <span class="info-box-text hidden-xs">Check your dining hall credit balance</span>
           </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
       </div><!-- /.col -->
       <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="info-box" onclick="window.location='{{ site.baseurl }}/menu/';">
+        <div class="info-box" onclick="window.open('//link.rc4.sg/diningmenu', '_blank')">
           <span class="info-box-icon bg-red"><i class="fa fa-cutlery"></i></span>
           <div class="info-box-content">
             <span class="info-box-title">Dining Menu</span>
-            <span class="info-box-text">Check out whats for breakfast and dinner</span>
+            <span class="info-box-text hidden-xs">Check out whats for breakfast and dinner</span>
           </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
       </div><!-- /.col -->
@@ -40,11 +40,11 @@ title: Student Life Home
       <div class="clearfix visible-sm-block"></div>
 
       <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="info-box" onclick="window.location='{{ site.baseurl }}/interest/';">
+        <div class="info-box" onclick="window.location='{{ site.baseurl }}/bookings/';">
           <span class="info-box-icon bg-green"><i class="fa fa-gamepad"></i></span>
           <div class="info-box-content">
-            <span class="info-box-title">Theme Rooms
-            <span class="info-box-text">Book the baking, music, reading or games room</span>
+            <span class="info-box-title">Book Facilities
+            <span class="info-box-text hidden-xs">Book the theme rooms, common lounge or MPH</span>
           </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
       </div><!-- /.col -->
@@ -53,7 +53,7 @@ title: Student Life Home
           <span class="info-box-icon bg-yellow"><i class="fa fa-globe"></i></span>
           <div class="info-box-content">
           <span class="info-box-title">Short URL</span>
-            <span class="info-box-text">Get a link.rc4.sg short URL for your events</span>
+            <span class="info-box-text hidden-xs">Get a link.rc4.sg short URL for your events</span>
           </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
       </div><!-- /.col -->
@@ -71,7 +71,6 @@ title: Student Life Home
             </div>
           </div>
           <div class="box-body">
-              <!-- <img class="poster" src="http://i.imgur.com/lxkoGcn.jpg"/> -->
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
               <!-- Indicators -->
               <ol class="carousel-indicators"></ol>
@@ -96,7 +95,7 @@ title: Student Life Home
       <section class="col-lg-5 connectedSortable ui-sortable">
         <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">College Calendar</h3>
+            <h3 class="box-title">College Events For The Week</h3>
             <div class="box-tools pull-right">
               <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
             </div>
@@ -107,6 +106,9 @@ title: Student Life Home
             <div id="calendar" class="fc fc-ltr fc-unthemed">
             </div>
           </div><!-- /.box-body -->
+          <div class="box-footer">
+            <a href="/calendar/"><i class="fa fa-calendar"></i> Check out the full college calendar!</a>
+          </div><!-- /.box-footer-->
         </div>
       </section>
     </div>
