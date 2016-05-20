@@ -15,25 +15,74 @@ title: Feedback
   </section>
 
   <!-- Main content -->
-  <section class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box">
-          <div class="box-header with-border">
-            <h3 class="box-title">General Feedback Form</h3>
-            <div class="box-tools pull-right">
-              <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Residential College 4 General Feedback</h3>
             </div>
-          </div>
-          <div class="box-body">
-            <iframe src="https://docs.google.com/forms/d/13Fn9Ce69cxgu3UyrE4xRV8ogBBpEDrZnoRz82tH_7VM/viewform" width="100%" height="1280px" frameborder="0" marginheight="0" marginwidth="0" >Loading...</iframe>
-          </div><!-- /.box-body -->
-          <div class="box-footer">
-          </div><!-- /.box-footer-->
-        </div>
-      </div>
-    </div><!-- /.row -->
-    <!-- Your Page Content Here -->
+            <form role="form" action="javascript:submit()">
+              <div class="box-body" id="success-body" style="display:none">
+                <div class="col-md-12">
+                  <h3><i class="fa fa-check-circle"></i>
+                    Thank you, your feedback has been submitted and we will do our best to resolve this issue!
+                  </h3>
+                </div>
+              </div>
+              <div class="box-body" id="form-body">
+                <div class="col-md-6">
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label for="name">Name (Optional)</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                  </div>
 
-  </section><!-- /.content -->
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="email">Email address (Optional)</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" pattern="^[a-zA-Z0-9._%+-]+@+((nus\.edu\.sg)|(u\.nus\.edu))$" title="Please use your NUS email!" required>
+                    <p class="help-block">Please provide your @u.nus.edu or @nus.edu.sg email.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Contact Number (Optional)</label>
+                  <input type="number" class="form-control" id="phone" placeholder="Enter phone number">
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Category</label>
+                  <input type="category" class="form-control" id="category" placeholder="What category is your feedback?">
+                </div>
+
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="comment">Feedback:</label>
+                  <textarea class="form-control" rows="5" id="feedback"></textarea>
+                </div>
+            </div>
+
+                <!-- RC4 Checkbox -->
+                <div class="col-md-12">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" required> I am an RC4 student and I acknowledge that my feedback will be addressed
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div><!-- /.row -->
+
+    </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
