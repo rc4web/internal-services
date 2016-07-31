@@ -1,4 +1,5 @@
 function submit(){
+  $('#submit-btn').addClass("disabled");
   var name = $('#name').val();
   var email = $('#email').val();
   var phone = $('#phone').val();
