@@ -3,7 +3,7 @@ function validateEmail(email) {
   return re.test(email);
 }
 function submit(){
-  $('submit-btn').addClass("disabled");
+  $('#submit-btn').addClass("disabled");
   var name = $('#name').val();
   var email = $('#email').val();
   var shorturl = $('#shorturl').val();
@@ -28,6 +28,8 @@ function submit(){
         },
         default: function() {
           console.log("NOT OKAY");
+          $('#failed-body').css("display","block");
+          $('#submit-btn').removeClass("disabled");
         }
       }
     });
@@ -35,5 +37,7 @@ function submit(){
   else {
     //Error message
     console.log("NOT OKAY BAD");
+    $('#failed-body').css("display","block");
+    $('#submit-btn').removeClass("disabled");
   }
 }
