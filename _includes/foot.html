@@ -41,6 +41,9 @@
     {% if page.url == "/interest/" %}
       <script src="{{ site.baseurl }}/_resources/js/interest.js" type ="text/javascript"></script>
     {% endif %}
+    {% if page.url == "/cognitio/" %}
+      <script src="{{ site.baseurl }}/_resources/js/cognitio.js" type ="text/javascript"></script>
+    {% endif %}
     {% if page.url == "/link/" or page.url == "/poster/" or page.url == "/claims/" or page.url == "/feedback/" %}
       <script src="{{ site.baseurl }}{{ page.url }}script.js" type ="text/javascript"></script>
     {% endif %}
