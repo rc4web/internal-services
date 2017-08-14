@@ -14,10 +14,10 @@ $.ajax({
         'name' : data.feed.entry[i]['gsx$cognitioname']['$t'],
         'description' : data.feed.entry[i]['gsx$description']['$t'],
         'timeslot' : data.feed.entry[i]['gsx$weeklytimeslots']['$t'],
-        'photo' : data.feed.entry[i]['gsx$igphotourl']['$t'],
+        'photo' : data.feed.entry[i]['gsx$cognitiophotourl']['$t'],
         'type' : data.feed.entry[i]['gsx$igtype']['$t'],
-        'igHead' : data.feed.entry[i]['gsx$currentcognitioighead']['$t'],
-        'igHeadContact' : data.feed.entry[i]['gsx$currentcognitioigheadcontactnumberoptional']['$t']
+        'igHead' : data.feed.entry[i]['gsx$currentcognitiohead']['$t'],
+        'igHeadContact' : data.feed.entry[i]['gsx$currentcognitioheadcontactnumber']['$t']
       };
 
       //For Sorting by type (Future)
